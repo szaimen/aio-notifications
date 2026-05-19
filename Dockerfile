@@ -1,5 +1,5 @@
 # Docker CLI is a requirement
-FROM docker:29.4.3-cli AS docker
+FROM docker:29.5.0-cli AS docker
 
 # The actual base image
 FROM alpine:3.23.4
