@@ -2,7 +2,7 @@
 FROM docker:29.5.3-cli AS docker
 
 # The actual base image
-FROM alpine:3.23.4
+FROM alpine:3.24.0
 
 # hadolint ignore=DL3002
 USER root
