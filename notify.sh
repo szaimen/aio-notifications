@@ -11,6 +11,6 @@ do
         echo "It looks like Nextcloud is not reachable. Not sending the notification."
     else
         # Send message via docker exec
-        docker exec nextcloud-aio-nextcloud bash /notify.sh "$SUBJECT" "$MESSAGE"
+        docker exec --user www-data nextcloud-aio-nextcloud bash /notify.sh "$SUBJECT" "$MESSAGE"
     fi
 done
