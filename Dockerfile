@@ -4,7 +4,7 @@ FROM docker:29.9.2-cli AS docker
 # The actual base image
 FROM alpine:3.24.3
 
-# hadolint ignore=DL3002
+# hadolint ignore=DL3002,DL3066
 USER root
 
 COPY --from=docker /usr/local/bin/docker /usr/local/bin/docker
